@@ -12,6 +12,10 @@ const Home = () => {
   const BuildingIcon = getIcon('Building2');
   const TrainIcon = getIcon('Train');
   const BusIcon = getIcon('Bus');
+  const CheckCircleIcon = getIcon('CheckCircle');
+  const ShieldIcon = getIcon('Shield');
+  const FilterIcon = getIcon('Filter');
+  const ZapIcon = getIcon('Zap');
   const ChevronRightIcon = getIcon('ChevronRight');
   
   // Example travel categories with icons and descriptions
@@ -142,7 +146,7 @@ const Home = () => {
             <div className="space-y-4">
               <div className="flex items-start">
                 <div className="p-2 rounded-lg bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 mr-4">
-                  {getIcon('CheckCircle')({ size: 20 })}
+                  <CheckCircleIcon size={20} />
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold mb-1">Easy Management</h4>
@@ -152,7 +156,7 @@ const Home = () => {
               
               <div className="flex items-start">
                 <div className="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 mr-4">
-                  {getIcon('Shield')({ size: 20 })}
+                  <ShieldIcon size={20} />
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold mb-1">Secure Booking</h4>
@@ -162,7 +166,7 @@ const Home = () => {
               
               <div className="flex items-start">
                 <div className="p-2 rounded-lg bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 mr-4">
-                  {getIcon('Filter')({ size: 20 })}
+                  <FilterIcon size={20} />
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold mb-1">Advanced Filters</h4>
@@ -182,7 +186,7 @@ const Home = () => {
             </div>
             <div className="absolute -bottom-6 -right-6 bg-white dark:bg-surface-800 rounded-xl p-4 shadow-lg border border-surface-200 dark:border-surface-700">
               <div className="flex items-center gap-3">
-                {getIcon('Zap')({ className: "text-yellow-500", size: 24 })}
+                <ZapIcon className="text-yellow-500" size={24} />
                 <div>
                   <p className="text-sm font-medium">Book in seconds</p>
                   <p className="text-xs text-surface-500">Fast, easy & secure</p>
