@@ -347,8 +347,8 @@ const MainFeature = ({ serviceType }) => {
                   <input
                     id="from"
                     type="text"
-                    value={from || ''}
-                    onChange={(e) => setFrom(e.target.value || '')}
+                    value={from}
+                    onChange={(e) => setFrom(e.target.value)}
                     placeholder={currentService.placeholders.from}
                     className={`input pl-10 ${formErrors.from ? 'border-red-500 focus:ring-red-500' : ''}`}
                   />
@@ -383,8 +383,8 @@ const MainFeature = ({ serviceType }) => {
                   <input
                     id="to"
                     type="text"
-                    value={to || ''}
-                    onChange={(e) => setTo(e.target.value || '')}
+                    value={to}
+                    onChange={(e) => setTo(e.target.value)}
                     placeholder={currentService.placeholders.to}
                     className={`input pl-10 ${formErrors.to ? 'border-red-500 focus:ring-red-500' : ''}`}
                   />
@@ -409,8 +409,8 @@ const MainFeature = ({ serviceType }) => {
                     id="departureDate"
                     type="date"
                     min={today}
-                    value={departureDate || ''}
-                    onChange={(e) => setDepartureDate(e.target.value || '')}
+                    value={departureDate}
+                    onChange={(e) => setDepartureDate(e.target.value)}
                     className={`input pl-10 ${formErrors.departureDate ? 'border-red-500 focus:ring-red-500' : ''}`}
                   />
                 </div>
@@ -432,8 +432,8 @@ const MainFeature = ({ serviceType }) => {
                       id="returnDate"
                       type="date"
                       min={departureDate || today}
-                      value={returnDate || ''}
-                      onChange={(e) => setReturnDate(e.target.value || '')}
+                      value={returnDate}
+                      onChange={(e) => setReturnDate(e.target.value)}
                       className={`input pl-10 ${formErrors.returnDate ? 'border-red-500 focus:ring-red-500' : ''}`}
                     />
                   </div>
