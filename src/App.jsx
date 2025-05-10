@@ -42,7 +42,7 @@ function App() {
               transition={{ duration: 0.5 }}
               className="text-primary"
             >
-              {getIcon('Plane')({ size: 24 })}
+              {React.createElement(getIcon('Plane'), { size: 24 })}
             </motion.div>
             <h1 className="text-xl font-bold text-surface-800 dark:text-surface-100">
               Travel<span className="text-primary">Swift</span>
@@ -62,7 +62,7 @@ function App() {
                 exit={{ y: 20, opacity: 0 }}
                 transition={{ duration: 0.2 }}
               >
-                {darkMode ? <SunIcon size={20} /> : <MoonIcon size={20} />}
+                {darkMode ? React.createElement(SunIcon, { size: 20 }) : React.createElement(MoonIcon, { size: 20 })}
               </motion.div>
             </AnimatePresence>
           </button>
